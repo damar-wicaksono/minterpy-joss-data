@@ -216,7 +216,7 @@ def create_plot():
     axs[0].set_title("Dimension 3", fontsize=title_fontsize)
     axs[0].set_ylim([1e-15, 5])
     axs[0].set_xlim([0.5, 1e7])
-    axs[0].set_ylabel(r"l-$\infty$ error", fontsize=axis_fontsize)
+    axs[0].set_ylabel(r"$||f - Q_f||_\infty$", fontsize=axis_fontsize)
     axs[0].tick_params(axis='both', which='major', labelsize=tick_fontsize)
     axs[0].grid()
 
@@ -323,7 +323,7 @@ def create_plot():
     axs[1].set_title("Dimension 4", fontsize=title_fontsize)
     axs[1].set_ylim([1e-15, 5])
     axs[1].set_xlim([0.5, 1e7])
-    axs[1].set_ylabel(r"l-$\infty$ error", fontsize=axis_fontsize)
+    axs[1].set_ylabel(r"$||f - Q_f||_\infty$", fontsize=axis_fontsize)
     axs[1].set_xlabel(
         "Number of data points (or coefficients)",
         fontsize=axis_fontsize,
