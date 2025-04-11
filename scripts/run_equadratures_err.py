@@ -123,8 +123,8 @@ def run_equadratures_err(
     fname = (
         f"errors-equadratures-"
         f"dim_{spatial_dimension}-"
-        f"nmin_{min_poly_degree:03}-"
-        f"nmax_{max_poly_degree:03}-"
+        f"nmin_{min_poly_degree}-"
+        f"nmax_{max_poly_degree}-"
         f"runge_param_{str(runge_parameter).replace('.', '_')}"
         f".csv"
     )

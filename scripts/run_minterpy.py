@@ -126,7 +126,7 @@ def run_minterpy(
     np.savetxt(
         "errors-minterpy-"
         f"dim_{spatial_dimension}-"
-        f"lp_{lp_degree_str}-"
+        f"lp_{lp_degree_str.replace('.', '_')}-"
         f"nmin_{min_poly_degree}-"
         f"nmax_{max_poly_degree}-"
         f"runge_param_{str(runge_parameter).replace('.', '_')}"
